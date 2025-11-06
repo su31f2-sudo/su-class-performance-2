@@ -3,6 +3,26 @@ const searchInput = document.getElementById("search-input");
 const searchBtn = document.getElementById("search-btn");
 const skeletonLoader = document.getElementById("skeleton-loader");
 
+const resetBtn = document.getElementById("reset-btn");
+
+// Show/hide reset button based on text input
+searchInput.addEventListener("input", () => {
+  if (searchInput.value.trim() !== "") {
+    resetBtn.style.display = "flex";
+  } else {
+    resetBtn.style.display = "none";
+  }
+});
+
+// Reset button logic
+resetBtn.addEventListener("click", () => {
+  searchInput.value = "";
+  resetBtn.style.display = "none";
+  phonesContainer.innerHTML = "";
+  loadPhones("samsung"); // reload default
+});
+
+
 // Load default phones
 document.addEventListener("DOMContentLoaded", () => {
   loadPhones("samsung");

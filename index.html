@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phone Store - Front End Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phone Store - Front End Project</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <header>
-    <div class="container header-content">
-      <div class="logo">
-        <i class="fas fa-mobile-alt"></i> PhoneStore
-      </div>
-      <div class="search-box">
-        <input type="text" id="search-input" placeholder="Search for phones..." />
-        <button id="search-btn"><i class="fas fa-search"></i></button>
-      </div>
-    </div>
-  </header>
+    <header>
+        <div class="container header-content">
+            <a href="/" class="logo">
+                <i class="fas fa-mobile-alt"></i> PhoneStore
+            </a>
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search for phones..." />
+                <button id="search-btn" title="Search"><i class="fas fa-search"></i></button>
+                <button id="reset-btn" title="Clear search"><i class="fas fa-times"></i></button>
+            </div>
 
-  <main class="container">
-    <h1 class="section-title">Latest Phones</h1>
+        </div>
+    </header>
 
-    <!-- Loading Skeleton -->
-    <div id="skeleton-loader" class="skeleton-grid"></div>
+    <main class="container">
+        <h1 class="section-title">Latest Phones</h1>
 
-    <!-- Phones Container -->
-    <div class="phones-grid" id="phones-container"></div>
-  </main>
+        <!-- Loading Skeleton -->
+        <div id="skeleton-loader" class="skeleton-grid"></div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 PhoneStore. All rights reserved.</p>
-    </div>
-  </footer>
+        <!-- Phones Container -->
+        <div class="phones-grid" id="phones-container"></div>
+    </main>
 
-  <!-- JS -->
-  <script defer src="app.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PhoneStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script defer src="app.js"></script>
 </body>
+
 </html>
